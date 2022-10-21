@@ -5,4 +5,6 @@ public interface HashFunction {
 	public int hash(int flowID);
 	
 	public int hash(long flowID);
+	
+	public int getXOR(long flowID);
 }

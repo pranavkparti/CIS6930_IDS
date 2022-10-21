@@ -15,5 +15,9 @@ public class XORHash implements HashFunction{
 	public int hash(long flowID) {
 		return (int)((flowID ^ saltNum) % tableSize);
 	}
+	
+	public int getXOR(long flowID) {
+		return (int)(flowID ^ saltNum);
+	}
 
 }
